@@ -74,8 +74,8 @@
   <notepads>
     <notepad>
       <note>Esta exemplo de transforma&#xe7;&#xe3;o limpa o cache do Mondrian e depois regera o cache atrav&#xe9;s do acesso a uma vis&#xe3;o do Saiku.&#xa;O usu&#xe1;rio e senha deve ser passados por par&#xe2;metros para autentica&#xe7;&#xe3;o.&#xa;&#xa;Compativel com a vers&#xe3;o do Pentaho BI-Server 4.x&#xa;&#xa;Desenvolvido por Marcio Junior Vieira - Ambinte Livre Tecnologia&#xa;http&#x3a;&#x2f;&#x2f;www.ambientelivre.com.br</note>
-      <xloc>71</xloc>
-      <yloc>196</yloc>
+      <xloc>19</xloc>
+      <yloc>200</yloc>
       <width>834</width>
       <heigth>136</heigth>
       <fontname>Arial</fontname>
