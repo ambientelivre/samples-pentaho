@@ -1,4 +1,4 @@
-## This small project is a test stress for cassandra by PDI
+# This small project is a test stress for cassandra by PDI
 have two transformations: one load te database and other read database. Use step metrics of PDI for analize. 
 
 
