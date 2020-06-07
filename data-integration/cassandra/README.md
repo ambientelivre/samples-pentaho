@@ -17,4 +17,4 @@ CREATE TABLE temperatura_by_day (
  PRIMARY KEY ((weatherstation_id,date),event_time)
 );
 
-This transformation connection is config for cassandra in localhos, alter ip or dns for your configs cassandra.
+This transformation connection is config for cassandra in localhost (alter ip or dns for your configs cassandra)
