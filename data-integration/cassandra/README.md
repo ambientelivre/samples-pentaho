@@ -1,4 +1,8 @@
-# Config Cassandra PDI Stress
+## This small project is a test stress for cassandra by PDI
+have two transformations: one load te database and other read database. Use step metrics of PDI for analize. 
+
+
+## Config Cassandra PDI Stress
 
 ## Create a KeySpace in Cassandra
 
