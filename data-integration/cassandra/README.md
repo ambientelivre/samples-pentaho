@@ -4,11 +4,11 @@ have two transformations: one load te database and other read database. Use step
 
 ## Config Cassandra PDI Stress
 
-## Create a KeySpace in Cassandra
+### Create a KeySpace in Cassandra
 
 CREATE KEYSPACE hackcassandra WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1 } ;
 
-## Create a Column Family em Cassandra (Table)
+### Create a Column Family em Cassandra (Table)
 CREATE TABLE temperatura_by_day (
   weatherstation_id text,
   date text,
@@ -17,5 +17,4 @@ CREATE TABLE temperatura_by_day (
  PRIMARY KEY ((weatherstation_id,date),event_time)
 );
 
-##OBS
-In config PDI Connection for localhost
+This transformation connection is config for cassandra in localhos, alter ip or dns for your configs cassandra.
