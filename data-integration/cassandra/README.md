@@ -1,10 +1,10 @@
 # Config Cassandra PDI Stress
 
-# Create a KeySpace in Cassandra
+## Create a KeySpace in Cassandra
 
-CREATE KEYSPACE ambientelivre WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1 } ;
+CREATE KEYSPACE hackcassandra WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1 } ;
 
-# Create a Column Family em Cassandra (Table)
+## Create a Column Family em Cassandra (Table)
 CREATE TABLE temperatura_by_day (
   weatherstation_id text,
   date text,
@@ -13,5 +13,5 @@ CREATE TABLE temperatura_by_day (
  PRIMARY KEY ((weatherstation_id,date),event_time)
 );
 
-#OBS
+##OBS
 In config PDI Connection for localhost
