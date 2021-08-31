@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>generate_model_ml_titanic</name>
+    <name>generate2_model_ml_titanic</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -427,10 +427,10 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2021/08/19 05:43:49.018</created_date>
+    <created_date>2021/08/19 14:57:26.158</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2021/08/19 05:43:49.018</modified_date>
-    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <modified_date>2021/08/19 14:57:26.158</modified_date>
+    <key_for_session_key/>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
@@ -438,6 +438,16 @@
   <order>
     <hop>
       <from>Microsoft Excel input</from>
+      <to>Filter rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows</from>
+      <to>Dummy (do nothing)</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows</from>
       <to>Select values</to>
       <enabled>Y</enabled>
     </hop>
@@ -685,8 +695,112 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>128</xloc>
-      <yloc>96</yloc>
+      <xloc>112</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <send_true_to>Dummy (do nothing)</send_true_to>
+    <send_false_to>Select values</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>age</leftvalue>
+        <function>IS NULL</function>
+        <rightvalue/>
+      </condition>
+    </compare>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>256</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Dummy (do nothing)</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>256</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <field>
+        <name>pclass</name>
+        <rename/>
+      </field>
+      <field>
+        <name>survived</name>
+        <rename/>
+      </field>
+      <field>
+        <name>sex</name>
+        <rename/>
+      </field>
+      <field>
+        <name>age</name>
+        <rename/>
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -709,7 +823,7 @@
     <use_reservoir_sampling>N</use_reservoir_sampling>
     <reservoir_seed>1</reservoir_seed>
     <reservoir_size/>
-    <stratification_field_name>survived</stratification_field_name>
+    <stratification_field_name/>
     <class_attribute>survived</class_attribute>
     <training_step_input_name>Select values</training_step_input_name>
     <test_step_input_name/>
@@ -717,8 +831,8 @@
     <split_percentage>66</split_percentage>
     <x_val_folds>10</x_val_folds>
     <random_seed>1</random_seed>
-    <model_output_path>/opt/projetos/samples-pentaho/data-integration/pentaho-machine-intelligence/models</model_output_path>
-    <model_file_name>model_titanic.model</model_file_name>
+    <model_output_path>/opt/projetos/samples-pentaho/data-integration/pentaho-machine-intelligence/models/</model_output_path>
+    <model_file_name>model2_titanic.model</model_file_name>
     <resumable_model_load_path/>
     <output_auc_metrics>N</output_auc_metrics>
     <output_ir_metrics>N</output_ir_metrics>
@@ -762,48 +876,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>688</xloc>
-      <yloc>96</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
-    <name>Select values</name>
-    <type>SelectValues</type>
-    <description/>
-    <distribute>Y</distribute>
-    <custom_distribution/>
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name/>
-    </partitioning>
-    <fields>
-      <field>
-        <name>pclass</name>
-      </field>
-      <field>
-        <name>survived</name>
-      </field>
-      <field>
-        <name>sex</name>
-      </field>
-      <field>
-        <name>age</name>
-      </field>
-      <select_unspecified>N</select_unspecified>
-    </fields>
-    <attributes/>
-    <cluster_schema/>
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>384</xloc>
-      <yloc>96</yloc>
+      <xloc>576</xloc>
+      <yloc>64</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
