@@ -1,6 +1,12 @@
 # samples-pentaho
 Neste projeto adicionamos uma serie de exemplos para serem utilizados como base para retirada de dúvidas sobre componentes Pentaho
 
+## Model e Predict Pentaho Machine Intelligence
+ Como gerar um modelo com pentaho machine intelligence e realizar uma predição.
+ Palestra Apresentada no CONFLOSS 2021.
+
+ https://github.com/ambientelivre/samples-pentaho/tree/master/data-integration/pentaho-machine-intelligence
+
 ## Cassandra Stress by Pentaho
  Exemplo de como fazer um teste de stress no Apache Cassandra usando o PDI.
  No mesmo também pode ver como se conectar ao Apache Cassandra.
