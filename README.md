@@ -28,3 +28,8 @@ Neste projeto adicionamos uma serie de exemplos para serem utilizados como base 
   
   https://github.com/ambientelivre/samples-pentaho/blob/master/data-integration/transforms/clear-cache-mondrian-pdi-biserver4x.ktr
   
+  
+## [REST API] Users and Roles Management - Pentaho Server
+  Algumas API's não estão funcionando conforme a documentação oficial do pentaho, neste repositório preparamos algumas dessas funcionalidades implementadas diretamente em transformações do PDI.
+- https://help.hitachivantara.com/Documentation/Pentaho/8.2/Developer_Center/REST_API/User_Role_Management/0O0#Assign_a_role_to_a_user
+
