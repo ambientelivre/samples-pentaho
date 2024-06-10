@@ -17,3 +17,8 @@ Este exemplo demostr como um step do Pentho Data Integration pode sair sem erros
 ## Logs sem erros
 
 ![image](https://raw.githubusercontent.com/ambientelivre/samples-pentaho/master/data-integration/jobs/ftp/img_screenshot/logs_ftp_not_files_pentaho.png)
+
+Baixe o Exemplo:
+https://raw.githubusercontent.com/ambientelivre/samples-pentaho/master/data-integration/jobs/ftp/check_ftp_is_empty.kjb
+
+Desenvolvido no PDI 7.1
