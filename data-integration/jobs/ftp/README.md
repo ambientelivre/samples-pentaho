@@ -11,3 +11,7 @@ Este exemplo demostr como um step do Pentho Dat Integration pode sair sem erros 
 
 ![image](https://raw.githubusercontent.com/ambientelivre/samples-pentaho/master/data-integration/jobs/ftp/img_screenshot/etl.png)
 
+
+## Logs sem erros
+
+![image](https://raw.githubusercontent.com/ambientelivre/samples-pentaho/master/data-integration/jobs/ftp/img_screenshot/logs_ftp_not_files_pentaho.png)
