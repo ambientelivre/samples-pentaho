@@ -1,5 +1,5 @@
 # Exemplo de FTP de arquivos 
-Este exemplo demostr como um step do Pentho Dat Integration pode sair sem erros mesmo quando não existam arquivos na pasta de FTP.
+Este exemplo demostr como um step do Pentho Data Integration pode sair sem erros mesmo quando não existam arquivos na pasta de FTP.
 
 ## Configurações do Step FTP
 
